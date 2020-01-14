@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+	<h1 class="text-center">Pitching app</h1>
+</div>
+
+{%for pitch in pitches%}
+<style>
+	* {
+		background-attachment: fixed;
+		background-image: url('https://cdn.lynda.com/course/2813181/2813181-637098375178245527-16x9.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: antiquewhite;
+	}
+
+	#wow {
+		padding: 5%;
+	}
+
+	#me {
+		margin-left: 50%;
+	}
+</style>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card" id="wow">
+	<div class="well well-lg">
+		<h4>Written by: {{pitch.user.username}}</h4>
+		<p>{{pitch.content}}</p>
+		<p><a href="/pitch/{{pitch.id}}" class="btn btn-primary pull-right">Read</a>
+		</p>
+	</div>
+</div>
+{%endfor%}
+<div class="container" style="padding-bottom: 20px;">
+	<a href="{{url_for('main.new_pitches')}}" class="btn btn-success" id="me">Create pitch</a>
+</div>
+
+{% endblock %}

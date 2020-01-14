@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{%block styles%}
+{{ super() }}
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ranga" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+{%endblock%}
+<!-- Content block -->
+{%block content%}
+<style>
+    * {
+        background-image: url('https://cdn.lynda.com/course/2813181/2813181-637098375178245527-16x9.jpg');
+        background-repeat: no-repeat;
+        color: antiquewhite;
+        background-attachment: fixed;
+    }
+</style>
+<div class="container" style="font-family: 'Indie Flower', cursive;">
+    <div class="row">
+        <p>Posted on {{date}} by {{pitch.user.username| capitalize}}</p>
+
+        <hr>
+        <p>{{pitch.content}}</p>
+        <span>
+            <br>
+            <a href="/pitch/{{pitch.id}}?like=1">
+                <i class="far fa-thumbs-up"></i>
+            </a>{{pitch.likes}} <a href="/pitch/{{pitch.id}}?dislike=1">
+                <i class="far fa-thumbs-down"></i>
+            </a>{{pitch.dislikes}}
+        </span>
+
+    </div>
+    {%endblock%}
