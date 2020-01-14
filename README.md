@@ -13,14 +13,15 @@ This is a ptitching app that allows people to create new pitches.It is easy to u
 
 ## Technologies used
 
-This project was build using Python3.8, Flask postgresql for the database and Deployed on Heroku
+>Python3.8
+>Flask postgresql for the database >Deployed on Heroku
 
-## Support,contribution or help
+## Contact Information/Comments
 
 japhethmwania99@gmail.com
 
 ## License
 
-MIT License
+MIT License <a href="https://choosealicense.com/licenses/mit/">
 
 Copyright (c) 2020 Japheth Mwania
