@@ -3,10 +3,9 @@
 ## By Japheth Mwania
 
 ## Description
+ Pitching app that enables one to pitch an idea to impress in 60 seconds .It's as easy as just signing up,login and pitch your creative idea.
 
-This is a ptitching app that allows people to create new pitches.It is easy to use simple click on create new pitch sign up or login and create a new pitch.
-
-### Set-up instructions
+### Setup Instructions
 
 1. You will have to ensure you have an internet connection.
 2. Clear cache on browser to avoid errors while loading.
